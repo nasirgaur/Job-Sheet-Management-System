@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Edit Job Sheet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            width: 500px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group input[type="date"] {
+            padding-right: 30px;
+        }
+        .form-group .date-icon {
+            position: relative;
+        }
+        .form-group .date-icon input {
+            padding-right: 30px;
+        }
+        .form-group .date-icon i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .buttons .save {
+            background-color: #003366;
+            color: white;
+        }
+        .buttons .cancel {
+            background-color: transparent;
+            color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">EDIT JOB SHEET</div>
+        <div class="form-group">
+            <label for="client-notes">Client Notes:</label>
+            <textarea id="client-notes" rows="3">f</textarea>
+        </div>
+        <div class="form-group">
+            <label for="assigned-technician">Assigned Technician:</label>
+            <input type="text" id="assigned-technician" value="f">
+        </div>
+        <div class="form-group">
+            <label for="estimated-amount">Estimated Amount:</label>
+            <input type="text" id="estimated-amount">
+        </div>
+        <div class="form-group">
+            <label for="deadline">Deadline:</label>
+            <div class="date-icon">
+                <input type="date" id="deadline" value="2024-09-18">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="status">Status:</label>
+            <select id="status">
+                <option>In Progress</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button class="save">Save Changes</button>
+            <button class="cancel">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

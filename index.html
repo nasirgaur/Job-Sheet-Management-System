@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>Client Management Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            HARDIK TRADERS - CLIENT MANAGEMENT DASHBOARD
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search by Client Name or ID...">
+            <button>Search</button>
+        </div>
+        <div class="new-job-sheet">
+            <button onclick="window.location.href='newjobsheet.html'">New Job Sheet</button>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Client Id</th>
+                    <th>Client Name</th>
+                    <th>Contact Info</th>
+                    <th>Received Date</th>
+                    <th>Inventory Received</th>
+                    <th>Reported Issues</th>
+                    <th>Client Notes</th>
+                    <th>Assigned Technician</th>
+                    <th>Estimated Amount</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>nand9953</td>
+                    <td>nandini goswami</td>
+                    <td>1234567890</td>
+                    <td>2024-09-05</td>
+                    <td>mouse</td>
+                    <td>hgh</td>
+                    <td>f</td>
+                    <td>f</td>
+                    <td>None</td>
+                    <td>2024-09-18</td>
+                    <td>in-progress</td>
+                    <td class="actions">
+                        <button class="view" onclick="window.location.href='viewjob.html'">View</button>
+                        <button class="edit" onclick="window.location.href='edit.html'">Edit</button>
+                        <button class="delete" onclick="window.location.href='delete.html'">Delete</button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>dfgd5644</td>
+                    <td>dfgdgfh</td>
+                    <td>5645645644</td>
+                    <td>2024-09-13</td>
+                    <td>gfs</td>
+                    <td>dfghfgh</td>
+                    <td>dfg</td>
+                    <td>sdfg</td>
+                    <td>43534.0</td>
+                    <td>2024-09-12</td>
+                    <td>pending</td>
+                    <td class="actions">
+                        <button class="view" onclick="window.location.href='viewjob.html'">View</button>
+                        <button class="edit" onclick="window.location.href='edit.html'">Edit</button>
+                        <button class="delete" onclick="window.location.href='delete.html'">Delete</button>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer">
+            © 2024 Hardik Traders
+        </div>
+    </div>
+</body>
+</html>

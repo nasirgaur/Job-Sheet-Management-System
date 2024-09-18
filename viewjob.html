@@ -1,0 +1,155 @@
+<html>
+<head>
+    <title>Job Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            width: 60%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .row div {
+            flex: 1;
+            padding: 5px;
+        }
+        .row div:first-child {
+            background-color: #003366;
+            color: white;
+            font-weight: bold;
+            width: 30%;
+        }
+        .row div:last-child {
+            background-color: #f0f0f0;
+            width: 70%;
+        }
+        .note-section {
+            margin-top: 20px;
+        }
+        .note-section textarea {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .note-section button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .actions a {
+            margin: 0 10px;
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .save-pdf {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .save-pdf button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">VIEW JOB SHEET</div>
+        <div class="content">
+            <div class="row">
+                <div>Client Name:</div>
+                <div>nandini goswami</div>
+            </div>
+            <div class="row">
+                <div>Contact Info:</div>
+                <div>1234567890</div>
+            </div>
+            <div class="row">
+                <div>Received Date:</div>
+                <div>2024-09-05</div>
+            </div>
+            <div class="row">
+                <div>Inventory Received:</div>
+                <div>mouse</div>
+            </div>
+            <div class="row">
+                <div>Inventory Image/Document/Video:</div>
+                <div>View File</div>
+            </div>
+            <div class="row">
+                <div>Reported Issues:</div>
+                <div>hgh</div>
+            </div>
+            <div class="row">
+                <div>Client Notes:</div>
+                <div>f</div>
+            </div>
+            <div class="row">
+                <div>Assigned Technician:</div>
+                <div>f</div>
+            </div>
+            <div class="row">
+                <div>Estimated Amount:</div>
+                <div>None</div>
+            </div>
+            <div class="row">
+                <div>Deadline:</div>
+                <div>2024-09-18</div>
+            </div>
+            <div class="row">
+                <div>Status:</div>
+                <div>in-progress</div>
+            </div>
+            <div class="note-section">
+                <label for="note">Add or Update Note:</label>
+                <textarea id="note">f</textarea>
+                <button>Save Note</button>
+            </div>
+            <div class="actions">
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+                <a href="#">Back</a>
+            </div>
+            <div class="save-pdf">
+                <button>Save as PDF</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
